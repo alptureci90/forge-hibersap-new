@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.hibersap:com.sap.conn.jco.sapjco3:3.0.18">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibersap/com.sap.conn.jco.sapjco3/3.0.18/com.sap.conn.jco.sapjco3-3.0.18.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibersap/com.sap.conn.jco.sapjco3/3.0.18/com.sap.conn.jco.sapjco3-3.0.18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibersap/com.sap.conn.jco.sapjco3/3.0.18/com.sap.conn.jco.sapjco3-3.0.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
