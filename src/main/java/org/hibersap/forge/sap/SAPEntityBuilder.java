@@ -233,7 +233,8 @@ public class SAPEntityBuilder {
 	private JavaClass createStructureClass(final String javaPackage, final ParameterMapping parameterMapping) {
 		final String className = SAPEntityBuilder.convertFieldNameToClassName(parameterMapping.getJavaName());
 		final JavaClass structureClass = createJavaClass(className, javaPackage);
-		final Set<FieldMapping> fieldMappings;
+		final Set<ParameterMapping> fieldMappings; //_new 20180710+AlpT.
+		//final Set<FieldMapping> fieldMappings; //_old
 
 		structureClass.addAnnotation(BapiStructure.class);
 
@@ -250,7 +251,8 @@ public class SAPEntityBuilder {
 			throw new HibersapException("Parameter type not expected: " + parameterMapping.getParamType());
 		}
 
-		for (final FieldMapping fieldMapping : fieldMappings) {
+		for (final ParameterMapping fieldMapping : fieldMappings) { // _new 20180710+AlpT.
+			// for (final FieldMapping fieldMapping : fieldMappings) { // _old
 			final Field<JavaClass> field = structureClass.addField();
 			field.setName(fieldMapping.getJavaName());
 			field.setType(fieldMapping.getAssociatedType());
